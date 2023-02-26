@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>War Game</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript" src="assets/js/index.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h2>War Game</h2>
+    <h4 id = 'select-character'>Select Your Character</h4>
+	<div class = 'row'> 
+		<div class = 'characters column' id = 'spider'> 
+			<p>Spider-Man</p>
+			<img src="./assets/images/spider.jpg" />
+		</div>
+		
+		<div class = 'characters column' id = 'hulk'>
+			<p>Hulk</p>
+			<img src="./assets/images/hulk.jpg" />
+		</div>
+	
+		<div class = 'characters column' id = 'captain-america'>
+			<p>Captain America</p>
+			<img src="./assets/images/captain.jpg" />
+		</div>
+
+		<div class = 'characters column' id = 'ant-man'>
+			<p>Ant-Man</p>
+			<img src="./assets/images/antman.jpg" />
+		</div>
+	</div>
+	<div class = 'row'> 
+			<p>Your Character</p>
+			<div id="character"></div>
+	</div>
+
+	<br><br><br><br><div class = 'row'> 
+			<p>Enemies Available To Attack</p>
+			<div id = 'enemies'></div>
+	</div>
+
+    <div class = 'row'> 
+		<p>Defender</p>
+		<div id = 'defender'></div>
+	</div>
+	
+	<button onclick = 'attack()'>Attack</button>
+	<br><br><br>
+  </body>
+</html>

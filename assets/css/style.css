@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body { text-align: center; font-family: 'Roboto', sans-serif; }
+
+.characters img { width: 300px; cursor: pointer;}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width : 1024px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .column {
+        width: 100%;
+    }
+}
